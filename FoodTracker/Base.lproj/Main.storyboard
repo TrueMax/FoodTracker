@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -92,13 +91,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sXb-go-yON">
-                                <rect key="frame" x="20" y="80" width="560" height="427"/>
+                                <rect key="frame" x="20" y="97" width="560" height="394"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="HFa-0M-wrb">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="63"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter new meal" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pUM-N6-OOx">
-                                                <rect key="frame" x="0.0" y="0.0" width="560" height="63"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
@@ -108,15 +107,15 @@
                                             <constraint firstAttribute="trailing" secondItem="pUM-N6-OOx" secondAttribute="trailing" id="bBl-E0-oSY"/>
                                         </constraints>
                                     </stackView>
-                                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="UeX-bF-CTq">
-                                        <rect key="frame" x="120" y="63" width="320" height="320"/>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="fish1" translatesAutoresizingMaskIntoConstraints="NO" id="UeX-bF-CTq">
+                                        <rect key="frame" x="120" y="30" width="320" height="320"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="bWj-Je-dqU" appends="YES" id="Z1x-cv-wIN"/>
                                         </connections>
                                     </imageView>
                                     <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="Alh-5V-TAv" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="383" width="560" height="44"/>
+                                        <rect key="frame" x="0.0" y="350" width="560" height="44"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
@@ -124,19 +123,11 @@
                                     <constraint firstItem="Alh-5V-TAv" firstAttribute="leading" secondItem="sXb-go-yON" secondAttribute="leadingMargin" id="1Gs-GT-HZy"/>
                                     <constraint firstItem="Alh-5V-TAv" firstAttribute="bottom" secondItem="sXb-go-yON" secondAttribute="bottomMargin" id="Bi1-lq-JZV"/>
                                     <constraint firstAttribute="bottom" secondItem="Alh-5V-TAv" secondAttribute="bottom" id="Cu3-th-i7H"/>
-                                    <constraint firstAttribute="bottom" secondItem="Alh-5V-TAv" secondAttribute="bottom" id="Jdx-Q6-Gjh"/>
                                     <constraint firstItem="UeX-bF-CTq" firstAttribute="top" secondItem="pUM-N6-OOx" secondAttribute="bottom" id="Rhg-kJ-cdU"/>
-                                    <constraint firstAttribute="trailing" secondItem="UeX-bF-CTq" secondAttribute="trailing" constant="120" id="Xt7-M6-EIw"/>
-                                    <constraint firstItem="Alh-5V-TAv" firstAttribute="leading" secondItem="sXb-go-yON" secondAttribute="leading" id="c2U-WU-awt"/>
                                     <constraint firstItem="UeX-bF-CTq" firstAttribute="centerY" secondItem="sXb-go-yON" secondAttribute="centerY" id="fGI-TQ-c7L"/>
                                     <constraint firstItem="UeX-bF-CTq" firstAttribute="centerX" secondItem="Alh-5V-TAv" secondAttribute="centerX" id="fls-4f-Qi6"/>
-                                    <constraint firstItem="Alh-5V-TAv" firstAttribute="leading" secondItem="sXb-go-yON" secondAttribute="leading" id="j69-H3-Eh2"/>
-                                    <constraint firstItem="Alh-5V-TAv" firstAttribute="leading" secondItem="sXb-go-yON" secondAttribute="leading" id="mZZ-6U-Ffk"/>
                                     <constraint firstItem="Alh-5V-TAv" firstAttribute="top" secondItem="UeX-bF-CTq" secondAttribute="bottom" id="mwK-Kw-Lv9"/>
-                                    <constraint firstAttribute="bottom" secondItem="Alh-5V-TAv" secondAttribute="bottom" id="oe4-Jx-KPK"/>
                                     <constraint firstItem="Alh-5V-TAv" firstAttribute="leading" secondItem="sXb-go-yON" secondAttribute="leading" id="wfX-hy-uG2"/>
-                                    <constraint firstItem="Alh-5V-TAv" firstAttribute="top" secondItem="sXb-go-yON" secondAttribute="top" constant="383" id="yEU-YH-Fbm"/>
-                                    <constraint firstItem="UeX-bF-CTq" firstAttribute="width" secondItem="pUM-N6-OOx" secondAttribute="height" multiplier="320:63" id="ydm-fT-8fq"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -220,5 +211,6 @@
     </scenes>
     <resources>
         <image name="defaultPhoto" width="600" height="361"/>
+        <image name="fish1" width="326" height="203"/>
     </resources>
 </document>
